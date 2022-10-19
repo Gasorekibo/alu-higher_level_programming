@@ -1,1 +1,1 @@
-script that Welcome to Holberton School! from combination of two string
+a script that print string respective to their index
