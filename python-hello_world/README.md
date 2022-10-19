@@ -1,1 +1,1 @@
-a script that print string respective to their index
+a script that print the zen of python by TimPeters
