@@ -1,1 +1,1 @@
-a script that compiles a Python script file
+a script that print string using write function instead of print
