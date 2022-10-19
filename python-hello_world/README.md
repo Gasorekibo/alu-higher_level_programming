@@ -1,1 +1,1 @@
-a Shell script that runs Python code
+program that print the string followed by new line using print function
