@@ -1,1 +1,1 @@
-script that print string using f-string format
+a script that print float number with two digit
