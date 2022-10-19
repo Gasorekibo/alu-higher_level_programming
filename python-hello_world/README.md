@@ -1,1 +1,1 @@
-a script that print string using write function instead of print
+the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode
