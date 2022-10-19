@@ -1,1 +1,1 @@
-a script that print the zen of python by TimPeters
+a script that compiles a Python script file
