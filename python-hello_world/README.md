@@ -1,1 +1,1 @@
-a script that  print 3 times a string stored in the variable str, followed by its first 9 characters
+script that Welcome to Holberton School! from combination of two string
