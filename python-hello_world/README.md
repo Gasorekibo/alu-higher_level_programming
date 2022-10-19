@@ -1,1 +1,1 @@
-program that print the string followed by new line using print function
+script that print string using f-string format
