@@ -1,1 +1,1 @@
-script that generate random number and print if is positive/negative of zero
+print random nbr with the specified condition
