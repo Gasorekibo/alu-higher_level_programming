@@ -1,1 +1,1 @@
-a program that prints the ASCII alphabet, in lowercase except e and q
+ a program that prints all numbers from 0 to 98 in decimal and in hexadecimal
