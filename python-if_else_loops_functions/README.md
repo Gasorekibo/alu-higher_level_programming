@@ -1,1 +1,1 @@
- a program that prints all numbers from 0 to 98 in decimal and in hexadecimal
+a program that prints numbers from 0 to 99 and once get the last nbr it goes to the last line
