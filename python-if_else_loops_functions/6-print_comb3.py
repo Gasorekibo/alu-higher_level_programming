@@ -4,4 +4,4 @@ for i in range(0, 9):
         if i == 8:
             print("{}{}".format(i, d))
         else:
-            print("{}{}".format(i, d),end=", ")
+            print("{}{}".format(i, d), end=", ")
