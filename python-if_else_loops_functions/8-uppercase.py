@@ -6,3 +6,4 @@ def uppercase(str):
         else:
             l = ord(i)
         print("{:s}".format(chr(l)), end="")
+    print("")
