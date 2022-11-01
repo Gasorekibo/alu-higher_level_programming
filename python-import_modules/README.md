@@ -1,1 +1,1 @@
- a program that prints all the names defined by the compiled module hidden_4.pyc
+a program that imports all functions from the file calculator_1.py and handles basic operations.
