@@ -1,1 +1,1 @@
- a program that prints the alphabet in uppercase, followed by a new line
+Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode
