@@ -1,1 +1,1 @@
-a program that prints #pythoniscool, followed by a new line, in the standard output without using builtin function like print
+ a program that prints the alphabet in uppercase, followed by a new line
