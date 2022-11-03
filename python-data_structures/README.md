@@ -1,1 +1,1 @@
-program to to switch value of a and b
+a function that deletes the item at a specific position in a list.
