@@ -7,7 +7,7 @@ def new_in_list(my_list, idx, element):
         for i in my_list:
             new_list = []
             if i == idx:
-                new_list.extend(element)
+                new_list.insert(idx,element)
                 return new_list
             else:
                 return my_list
