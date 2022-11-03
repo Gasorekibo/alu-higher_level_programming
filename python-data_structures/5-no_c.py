@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 def no_c(my_string):
     if ord('c'):
-        y= {ord('c'): None}
-        return y
-    elif ord('C'):
-        i = {ord('C'): None}
-        return i
+        return my_string.translate({ord('c'): None})
+    elif ord("C"):
+        return my_string.translate({ord('C'): None})
     else:
         return my_string
