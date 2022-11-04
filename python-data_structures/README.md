@@ -1,1 +1,1 @@
-a function that deletes the item at a specific position in a list.
+a function that removes all characters c and C from a string
