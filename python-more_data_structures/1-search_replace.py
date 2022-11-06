@@ -3,5 +3,5 @@ def search_replace(my_list, search, replace):
     for i in range(len(my_list)):
         new_list = my_list.copy()
         if new_list[i] == search:
-            new_list == replace
+            new_list = replace
     return new_list
