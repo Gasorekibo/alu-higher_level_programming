@@ -1,1 +1,1 @@
-a function that deletes a key in a dictionary
+a function that returns a key with the biggest integer value
