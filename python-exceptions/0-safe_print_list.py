@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
         length += 1
     for j in range(x):
         try:
-            print("{}".format(my_list(j)), end="")
+            print("{}".format(my_list[j]), end="")
             print("")
         except:
             return length
