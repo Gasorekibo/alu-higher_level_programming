@@ -8,7 +8,7 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(m_list[j]), end="")
             num += 1
-        except Exception as ex:
+        except (ValueError, TypeError):
             pass
     print("")
     return num
