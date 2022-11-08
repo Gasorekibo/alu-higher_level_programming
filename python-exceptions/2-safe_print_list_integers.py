@@ -6,13 +6,9 @@ def safe_print_list_integers(my_list=[], x=0):
         length += 1
     for j in range(x):
         try:
-            if isinstance(j, int) and j <= range(x):
-                print("{:d}".format(m_list[j]), end="")
-            else:
-                pass
-        except:
-            print("")
-            return length
-        num += 1
+            print("{:d}".format(m_list[j]), end="")
+            num += 1
+        except Exception as ex:
+            pass
     print("")
     return num
