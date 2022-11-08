@@ -3,9 +3,9 @@ def safe_print_division(a, b):
     try:
         result = a/b
     except Exception as ex:
-        print(ex)
+        pass
     finally:
         if b != 0:
-            print("{}".format.(result))
+            print("Inside result:{}".format.(result))
         else:
             return None
