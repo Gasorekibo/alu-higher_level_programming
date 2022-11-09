@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        result = a/b
-    except Exception as ex:
+        def division(a,b):
+            result = a/b
+            return("Inside result: {}".format(result))
+        except Exception as ex:
         pass
     finally:
         if b != 0:
-            print("Inside result:{}".format.(result))
+        division(a,b)
         else:
             return None
