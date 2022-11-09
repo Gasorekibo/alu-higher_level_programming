@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        if b != 0:
-            result = a / b
-            print("Inside result: {}".format(result))
-    except Exception as ex:
+        result = a/b
+    except ZeroDivisionError:
         pass
     finally:
-        if b == 0:
+        if b != 0:
+            print("Inside result: {}".format(result))
+            return result
+        else:
+            print("Inside result: {}".format(None))
             return None
