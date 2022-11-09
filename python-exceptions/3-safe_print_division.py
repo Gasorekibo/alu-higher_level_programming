@@ -7,5 +7,6 @@ def safe_print_division(a, b):
     except Exception as ex:
         pass
     finally:
-        if b != 0:
+        if b == 0:
+            result = None
             print("{} / {} = {}".format(a, b, result))
