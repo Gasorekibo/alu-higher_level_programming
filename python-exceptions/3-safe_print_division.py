@@ -3,11 +3,11 @@ def safe_print_division(a, b):
     try:
         def division(a, b):
             result = a/b
-            return("Inside result: {}".format(result))
+            print("Inside result: {}".format(result))
     except Exception as ex:
         pass
     finally:
         if b != 0:
-            division(a, b)
+            print(result)
         else:
             return None
