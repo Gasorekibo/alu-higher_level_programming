@@ -1,1 +1,1 @@
-a class that define an area of square
+writting a size class and apply getter and setter
