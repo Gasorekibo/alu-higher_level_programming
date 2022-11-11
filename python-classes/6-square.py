@@ -17,7 +17,7 @@ class Square:
         """
         self.size = size
         self.position = position
-    
+
     @property
     def size(self):
         """
@@ -30,7 +30,7 @@ class Square:
         """
           validates size is an integer that is greater than zero
         """
-        if not isinstance(size, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
