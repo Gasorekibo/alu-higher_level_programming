@@ -1,1 +1,1 @@
-creating a square class
+question 6
