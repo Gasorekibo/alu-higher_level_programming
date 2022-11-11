@@ -4,10 +4,13 @@
 
 
 class Square:
-    '''instatioting private attribute'''
+    '''
+    instatioting private attribute'''
+    
     def __init__(self, size=0):
-        '''args
-        determining the size of square'''
+        '''args:
+                size (int): size of the new square'''
+        
         self.__size = size
     @property
     def size(self):
