@@ -12,6 +12,7 @@ class Square:
                 size (int): size of the new square'''
         
         self.__size = size
+    
     @property
     def size(self):
         '''detter application'''
