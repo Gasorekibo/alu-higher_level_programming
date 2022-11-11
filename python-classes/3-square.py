@@ -1,19 +1,21 @@
 #!/usr/bin/python3
-# 3-square.py
-
-# defining how this module is going to work in the following class
-
-"""Area square: """
+# class 'Square' that defines a square by:
+# (based on 2-square.py)
+"""
+    define a class 'Square'
+"""
 
 
 class Square:
-    ''' instationing the private attribute'''
+""" 
+    square with private instance attribute: 'size'
+"""
     
     def __init__(self, size=0):
-        ''' Args:
+        """ Args:
 
                 size (int): size of the new square
-        '''
+        """
         if size not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -21,5 +23,7 @@ class Square:
         self.__size = size
     
     def area(self):
-        '''return the area of square'''
+        """
+           Return: area of the square
+        """
         return self.__size * self.__size
