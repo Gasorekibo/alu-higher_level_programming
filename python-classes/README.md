@@ -1,1 +1,1 @@
-class that define square with private attribute size
+a class that define an area of square
