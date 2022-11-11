@@ -1,41 +1,33 @@
 #!/usr/bin/python3
-# class 'Square' that defines a square by:
-# based on 3-square.p finally we will pprint the value of area
-"""building a module that return an area of square """
-
+# a class Square that defines a square by: (based on 4-square.py)
+# but at this time we will add a private instance attribute
+'''
+   define a class 'Square'
+'''
 
 
 class Square:
-    """ class variable """
-    
+    '''
+       this class will contain __init__ module, and attributes
+    '''
     def __init__(self, size=0):
-        """
-           args:
-               size (int): size of the new square
-        """
-        
-        self.__size = size
-    
+        ''' this is an __init__ method, it has characters of an object '''
+        self.size = size
+
     @property
     def size(self):
-        """
-           gets current size of the square
-        """
-        return(self.__size)
-    
+        ''' this is a private instance attribute '''
+        return self.__size
+
     @size.setter
-    def size(self.value):
-        """
-           validates size is an integer that is greater than zero
-        """   
+    def size(self, value):
+        ''' stting the value of a size '''
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("size must be >=0")
         self.__size = value
-    
+
     def area(self):
-        """
-          Return: area of the square
-        """
-        return self.size * self.size
+        ''' this function will return the area of the current square '''
+        return (self.__size * self.__size)
