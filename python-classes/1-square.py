@@ -5,6 +5,6 @@
 
 class Square:
     '''instantition the size attribute'''
-    def __init__(self,size):
+    def __init__(self, size):
         '''initialize private size instance'''
         self.__size = size
