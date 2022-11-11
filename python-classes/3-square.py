@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 # a class that define an area of a square
-'''definng a class'''
+'''
+definng a class
+
+'''
 
 
 class Square:
