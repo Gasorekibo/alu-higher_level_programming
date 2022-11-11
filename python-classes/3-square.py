@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-# a class that define an area of a square
-# based on the suare 2
-# this is the comment for the working of the module
-'''
- defining a class
-'''
+# 3-square.py
+
+# defining how this module is going to work in the following class
+
+"""Area square: """
 
 
 class Square:
