@@ -23,7 +23,7 @@ class Square:
         """
           gets current size of the square
         """
-        return self.size
+        return(self.size)
     
     @size.setter
     def size(self, value):
