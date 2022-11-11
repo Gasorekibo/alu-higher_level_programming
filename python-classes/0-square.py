@@ -2,6 +2,7 @@
 '''defining a simple class that does nothing
 '''
 class Square:
-    '''     a class that define a square
+    '''a class that define 
+    a square class
     '''
     pass
