@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # class 'Square' that defines a square by:
-"""  define a class 'Square' """
-
-
+'''
+   define a class 'Square'
+'''
 class Square:
     """
         square with private instance attribute: 'size'
