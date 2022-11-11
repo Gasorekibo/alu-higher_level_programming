@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # class 'Square' that defines a square by:
+# based on 3-square.p finally we will pprint the value of area
 '''
    define a class 'Square'
 '''
