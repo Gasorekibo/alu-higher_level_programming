@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # a class Square that defines a square
+# documenting the how the module will work in the following class
 '''by refering to question 3'''
 
 
