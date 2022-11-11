@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 # class 'Square' that defines a square by:
-# (based on 3-square.py)
-"""
-  define a class 'Square'
-"""
+"""  define a class 'Square'"""
 
 
 class Square:
