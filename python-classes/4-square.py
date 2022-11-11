@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-# a class Square that defines a square
-# documenting the how the module will work in the following class
-'''by refering to question 3'''
+# class 'Square' that defines a square by:
+# (based on 3-square.py)
+"""
+  define a class 'Square'
+"""
 
 
 class Square:
@@ -31,4 +33,3 @@ class Square:
     def area(self):
         '''returning the area of square'''
         return self.size * self.size
-
