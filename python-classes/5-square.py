@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Printing a square
-"""defining square class"""
+""" defining square class """
 
 
 class Square:
