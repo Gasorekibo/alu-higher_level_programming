@@ -1,1 +1,1 @@
-n empty class Square that defines a square
+class that define square with private attribute size
