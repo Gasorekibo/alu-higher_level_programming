@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # Simple rectangle
+# based on the 0-rectangle.py
 ''' creating an empty rectangle class '''
 
 
@@ -8,9 +9,11 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         ''' initializing the class instances
             args:
-            it has 2 args width and height '''
-            self.width = width
-            self.height = height
+                width(int): it is a width of rectangle
+                rectangle(int): it is a height of rectangle
+        '''
+        self.width = width
+        self.height = height
     
     @property
     def width(self):
@@ -19,7 +22,9 @@ class Rectangle:
     
     @width.setter
     def width(self, value):
-        ''' checking if the private attribute meet the condition to be retrieve '''
+        ''' checking if the private attribute meet the condition to be retrieve
+            args:
+                it has only one argument value'''
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         elif width < 0:
