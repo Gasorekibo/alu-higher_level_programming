@@ -59,7 +59,7 @@ class Rectangle:
             return((self.__height * 2) + (self.__width * 2))
     def __str__(self):
         ''' print rectangle using str dunder method'''
-        if self__width == 0 or self__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return("")
         string = []
         for i in range(len(self.__height)):
@@ -67,4 +67,3 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-
