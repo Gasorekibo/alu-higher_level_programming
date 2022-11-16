@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# only subclass return True
-# and False if it is not a subclass
-''' we are not allowed to import module '''
-''' we are going to us issubclass function '''
+# only sub class will return True
+# otherwise return True
+''' we are not allowed to import any module
+    and we are going to use isinstance '''
 
 
 
