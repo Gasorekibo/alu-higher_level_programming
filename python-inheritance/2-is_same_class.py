@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# return True if it is instance 
-'''otherwise return False '''
+# return True if it is instance
+''' otherwise return False '''
 
 
 def is_same_class(obj, a_class):
     ''' checking the condition '''
-    if isinstance(obj, a_class):
+    if type(obj) == a_class:
         return True
     else:
         return False
