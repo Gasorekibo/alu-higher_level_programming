@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-# only sub class will return True
-# otherwise return True
-''' we are not allowed to import any module
-    and we are going to use isinstance '''
-
+# only sub class return True 
+""" other return False """
 
 
 def inherits_from(obj, a_class):
-    ''' determine if obj is subclass of a_class
-        args:
-            obj: object
-            a_class :class 
-    '''
-    if issubclass(type(obj), a_class)) and type(obj) != a_class:
+    """
+        returns True if the object is an instance
+        of a class that inherited (directly or indirectly)
+        from the specified class ; otherwise False.
+    """
+    if type(obj) != a_class and issubclass(type(obj, a_class)):
         return True
-    else:
-        return False
+    return False
