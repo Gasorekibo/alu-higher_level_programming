@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # only subclass return True
+# and False if it is not a subclass
 ''' we are going to us issubclass function '''
 
 
