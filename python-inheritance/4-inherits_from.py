@@ -7,7 +7,11 @@
 
 
 def inherits_from(obj, a_class):
-    ''' determine if obj is subclass of a_class '''
+    ''' determine if obj is subclass of a_class
+        args:
+            obj: object
+            a_class :class 
+    '''
     if issubclass(type(obj), a_class)) and type(obj) != a_class:
         return True
     else:
