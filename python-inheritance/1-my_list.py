@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # a class MyList that inherits from list
-''' list in sorted order '''
+''' define a class MyList '''
 
 
 class Mylist(list):
