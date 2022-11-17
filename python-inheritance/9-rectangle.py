@@ -2,7 +2,7 @@
 # define Rectangle class
 # inherited from 8_BaseGeometry
 ''' we allowed to import module '''
-Rectangle = __import__('7-base_geometry.py').Rectangle
+BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
