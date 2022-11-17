@@ -5,7 +5,9 @@
 
 
 class Myint(int):
-    """ class Myint """
+    """ 
+      invert int operators '==' and '!='
+    """
     
     def __eq__(self, value):
         """Override == opeartor with != behavior."""
