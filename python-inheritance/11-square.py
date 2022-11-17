@@ -20,7 +20,3 @@ class Square(Rectangle):
         super().integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
-
-    def __str__(self):
-        """ return string """
-        return f'[Rectangle] {self.__width}/{self.__heigth}'
