@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-# class Rectangle
-# based on the 8-rectangle.py
-''' defining the Rectangle class
-    allowed to import moduli
-'''
+# Full rectangle
+# rectangle that inherit from BaseGeometry
+''' allowe to import module '''
 BaseGeometry = __import__(7-base_geometry.py).BaseGeometry
-
 
 class Rectangle(BaseGeometry):
     ''' instantioning Rectangle class '''
