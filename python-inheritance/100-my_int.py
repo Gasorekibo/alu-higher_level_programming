@@ -4,11 +4,9 @@
 """ this is advanced task """
 
 
-class Myint(int):
-    """ 
-      invert int operators '==' and '!='
-    """
-    
+class MyInt(int):
+    """ my int class"""
+
     def __eq__(self, value):
         """Override == opeartor with != behavior."""
         return self.real != value
