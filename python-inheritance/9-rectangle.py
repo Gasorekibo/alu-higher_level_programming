@@ -1,22 +1,24 @@
 #!/usr/bin/python3
-# Full rectangle
-# based on 8-rectangle.py
-''' we allowed to import module '''
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+# class Rectangle
+# based on the 8-rectangle.py
+''' defining the Rectangle class '''
+BaseGeometry = __import__(7-base_geometry.py).BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    ''' defining Rectangle class that inherit from
-    BaseGeometry '''
+    ''' instantioning Rectangle class '''
     def __init__(self, width, height):
-        ''' instatiation '''
+        ''' the method has two
+            args:
+              width and height
+        '''
         self.integer_validator('width', width)
         self.__width = width
-        self.integer_validator('height' = height)
+        self.integer_validator('height', height)
         self.__height = height
     def area(self):
-        ''' returning the area of Rectangle '''
-        return(self.__width * self.height)
+        ''' return the area of rectangle '''
+        return self.__width * self.__height
     def __str__(self):
-        ''' printing the area using __str__ method '''
-        return f'[Rectangle] {self.width} / {self.height}'
+        ''' printing is string format '''
+        return f'[Rectangle] {self.__width} / {self.__width}'
