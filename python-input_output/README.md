@@ -1,1 +1,1 @@
-file input and ourput
+write to a file
