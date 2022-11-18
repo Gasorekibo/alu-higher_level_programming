@@ -2,7 +2,6 @@
 # Student to JSON
 #  a class Student that defines a student
 ''' defining a class with puplic instance '''
-import json
 
 
 class Student:
