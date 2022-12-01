@@ -6,4 +6,3 @@ def complex_delete(a_dictionary, value):
                 del (a_dictionary[keys])
                 break
     return a_dictionary
-            
