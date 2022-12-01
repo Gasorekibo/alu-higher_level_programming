@@ -1,16 +1,23 @@
 #!/usr/bin/python3
-from functools import reduce
 def roman_to_int(roman_string):
-    list1 = []
-    list2 = []
-    dictionary = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 100}
-    if roman_string not in dictionary.keys():
+    n_rom = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000}
+    value = 0
+    num = 0
+    len_n = roman_string
+    if type(roman_string) is not str:
         return 0
-    else:
-        for i in roman_string:
-            for j in dictionary:
-                if i == n:
-                    list1.append(dictionary[j])
-                    a = reduce(map(lambda x, y : y - x if y > x else x + y), list1)
-        list2.append(a)
-        return list2
+    if roman_string is None:
+        return 0
+    for num in range(num, len(len_n)):
+        if num < len(len_n) - 1 and n_rom[len_n[num]] < n_rom[len_n[num + 1]]:
+            value -= n_rom[len_n[num]]
+        else:
+            value += n_rom[len_n[num]]
+    return value
