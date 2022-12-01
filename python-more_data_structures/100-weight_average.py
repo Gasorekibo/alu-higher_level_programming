@@ -4,8 +4,8 @@ def weight_average(my_list=[]):
     b = 0
     value = 0
     result = 0
-    if my_list = []:
-        return 0
+    if my_list == []:
+        return('{:.2f}'.format(0))
     else:
         while b < a:
             m = my_list[b][0] * my_list[b][1]
@@ -13,4 +13,4 @@ def weight_average(my_list=[]):
             i = my_list[b][1]
             result += i
             b += 1
-        return value/result
+        return('{:.2f}'.format(value/result))
