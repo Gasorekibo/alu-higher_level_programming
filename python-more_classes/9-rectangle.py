@@ -77,7 +77,9 @@ class Rectangle:
     def __repr__(self):
         ''' print rectangle in a string format '''
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
-
+     def __del__(self):
+         ''' return the message if the instance has been deleted '''                                                                                              Rectangle.number_of_instances -= 1                                                                                                                       print("Bye rectangle...") 
+    
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         ''' comparing the area of two triangle '''
@@ -94,8 +96,3 @@ class Rectangle:
     def area(cls, size):
         ''' returning new rectangle instance that is a square '''
         return cls(size, size)
-
-    def __del__(self):
-        ''' return the message if the instance has been deleted '''
-        Rectangle.number_of_instances -= 1
-        print("Bye rectangle...")
