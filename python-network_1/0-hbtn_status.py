@@ -3,7 +3,6 @@
 """ fetching https://alu-intranet.hbtn.io/status """
 import urllib.request
 
-
 if __name__ == "__main__":
     req = urllib.request.Request("https://alu-intranet.hbtn.io/status")
     data = with urllib.request.urlopen(req)as f:
