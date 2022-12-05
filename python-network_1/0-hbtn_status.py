@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# python network
-''' fetching a given url '''
+# python scfript that fetches a url
+''' fetching a https://alu-intranet.hbtn.io/status '''
 import urllib.request
 
 
