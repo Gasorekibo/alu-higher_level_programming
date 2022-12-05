@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # python scfript that fetches a url
-''' fetching a https://alu-intranet.hbtn.io/status '''
+""" fetching a https://alu-intranet.hbtn.io/status """
 import urllib.request
 
 
