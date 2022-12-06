@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # a Python script that takes your GitHub credentials username and password
 """
-   and uses the GitHub API to display your id
+    and uses the GitHub API to display your id
 """
 import sys
 import requests.auth import HTTPBasicAuth
