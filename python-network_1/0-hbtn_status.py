@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # fetching a specific url given
-""" we are going to fetch https://alu-intranet.hbtn.io/status as url given """
+"""
+   we are going to fetch https://alu-intranet.hbtn.io/status as url given
+"""
 from urllib.request import urllopen
 
 
