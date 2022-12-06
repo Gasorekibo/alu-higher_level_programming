@@ -11,8 +11,8 @@ if __name__ == "__main__":
     request = requests.get(url)
     all_commit = request.json()
     try:
-       for p in range(10):
-           print("{}: {}".format(all_commit[p].get("sha"),
+        for p in range(10):
+            print("{}: {}".format(all_commit[p].get("sha"),
                  all_commit[p].get("commit").get("author").get("name")))
     except IndexError:
         pass
