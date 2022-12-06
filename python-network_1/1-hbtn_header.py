@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# dispaying the head of the response
+#dispaying the head of the response
 """
     importing two module sys and urllib.reques
 """
