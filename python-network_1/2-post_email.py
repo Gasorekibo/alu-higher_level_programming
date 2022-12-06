@@ -15,5 +15,5 @@ if __name__ == "__main__":
     info = info.encode("ascii")
     req = urllib.request.Request(url, info)
     with urllib.request.urlopen(req) as f:
-        result = read()
+        result = f.read()
         print(result.decode("utf-8"))
