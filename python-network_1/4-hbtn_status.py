@@ -3,12 +3,11 @@
 """
     the script fetches https://alu-intranet.hbtn.io/status
 """
-import urllib.request
+import request
 
 
 if __name__ == "__main__":
-    with ullib.request.urlopen("https://alu-intranet.hbtn.io/status") as f:
-        result = f.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(result)))
-        print("\t- content: {}".format(result))
+    result = request.get("https://alu-intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(result)))
+    print("\t- content: {}".format(result))
