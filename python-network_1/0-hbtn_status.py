@@ -3,7 +3,7 @@
 """
     fetch 'https://intranet.hbtn.io/status'
 """
-from urllib.request import urllopen
+from urllib.request import urlopen
 
 
 if __name__ == "__main__":
