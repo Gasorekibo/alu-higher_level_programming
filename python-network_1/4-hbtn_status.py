@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# a script that fetches a given url
+# a scrip that fetches the givent url and display the content as string
 """
-    the script fetches https://alu-intranet.hbtn.io/status
+    fetching the url: https://alu-intranet.hbtn.io/status
 """
 import requests
 
