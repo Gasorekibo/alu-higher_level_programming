@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # python script that fetches 'https://alu-intranet.hbtn.io/status'
 """
-    fetch 'https://intranet.hbtn.io/status'
+    this will fetch URL
 """
 from urllib.request import urlopen
 
