@@ -2,10 +2,11 @@
 # python script that takes in a URL, sends a request to the URL,
 # and display the header content
 """
-    sends a request to the URL and displays the value of the X-Request-Id variable found in the header
+    sending request to URL and display
+    header contents
 """
 import sys
-import urllib.request.urlopen
+import urllib.request
 
 
 if __name__ == "__main__":
