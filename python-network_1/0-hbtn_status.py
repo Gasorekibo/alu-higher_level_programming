@@ -3,11 +3,12 @@
 """
     this will fetch URL
 """
-from urllib.request import urlopen
+import urllib.request
 
 
 if __name__ == "__main__":
-    with urlopen("https://alu-intranet.hbtn.io/status") as f:
+    result = urllib.request.Request("https://intranet.hbtn.io/status")
+    with urllib.request.urlopen(result) as f:
         value = f.read()
         print("Body response:")
         print("\t- type: {}".format(type(value)))
