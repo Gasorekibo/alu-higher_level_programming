@@ -68,10 +68,10 @@ the funtion will not work if infinity argument is passed
 
 the function will also fail if NaN number are passed
 ::
-	>>> add_integer(float('NaN'))
+	>>> add_integer(float('nan'))
 	Traceback (most recent call last):
 	OverflowError: cannot convert float Nan to integer
 
-	>>> add_integer(8, float('NaN'))
+	>>> add_integer(8, float('nan'))
 	Traceback (most recent call last):
 	OverflowError: cannot convert float NaN to integer
