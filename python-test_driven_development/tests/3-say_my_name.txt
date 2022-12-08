@@ -14,7 +14,7 @@ if one of the name if absent the name will be printed with white space
 in place where there is missing arguments
 ::
 	>>> say_my_name("Gasore")
-	My name is Gasore
+	My name is Gasore 
 	>>> say_my_name("", "Mugwaneza")
 	My name is  Mugwaneza
 
