@@ -16,7 +16,7 @@ in place where there is missing arguments
 	>>> say_my_name("Gasore")
 	My name is Gasore
 	>>> say_my_name("", "Mugwaneza")
-	My name is  Mugwaneza 
+	My name is  Mugwaneza
 
 For invalid name the error will raise
 ============================================
