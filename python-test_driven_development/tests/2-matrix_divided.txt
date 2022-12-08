@@ -67,8 +67,8 @@ If matrix is  not a list of lists TypeError will be raised
 If one element of matrix is neither int or float TypeError will be raised
 ::
 	>>> matrix = [
-	...	[3, 5, 'hello'],
-	...	[2, -9.0, 3.4]
+	...	[3, 5, 98],
+	...	[2, "not a number", 3.4]
 	... ]
 	print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
@@ -90,7 +90,7 @@ All rows of matrix must be equal otherwise the Typeerror will be raised
 	...	[3, 4, 6],
 	...	[5, 7, 9]
 	... ]
-	>>> print(matrix_divided(matrix, "Gasore"))
+	>>> print(matrix_divided(matrix, "not a number"))
 	Traceback (most recent call last):
 	TypeError: div must be a number
 	
