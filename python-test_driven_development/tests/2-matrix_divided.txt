@@ -11,12 +11,12 @@ Now let exlore the function and see how it work with example and expression
 	...	[8, 10, 12]
 	...	]
 	>>> print(matrix_divided(matrix, 2))
-	[[1, 2, 3], [4, 5, 6]]
+	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
 Original matrix remain unchangeable
 ::
 	>>> print(matrix)
-	[[2, 4, 6], [1, 5, 3]]
+	[[2, 4, 6], [8, 10, 12]]
 
 This function works also with floating numbers
 ::
@@ -27,14 +27,14 @@ This function works also with floating numbers
 	>>> print(matrix_divided(matrix, 2))
 	[[1.1, 2.0, 3.2], [5.0, 4.1, 5.3]]
 
-This works even if matrix element involeve float and function at the same time
+This works even if matrix element involve float and function at the same time
 ::
 	>>> matrix= [
-	...	[2, 0.9, -6.9],
-	...	[-3.4, 0.5, -1]
+	...	[2, 0.8, -6.8],
+	...	[-4.4, 2.4, -6]
 	...	]
 	>>> print(matrix_divided(matrix, 2))
-	[[1, 0.4, -3.4], [-1.7, 0.2, -0.5]]
+	[[1.0, 0.4, -3.4], [-2.2, 1.2, -3]]
 
 If the wrong matrix is Givet the Error will rise
 ====================================================
@@ -46,7 +46,7 @@ If matrix is not nested list of int or float TypeError will be raised
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	>>> matrix = None
-	print(matrix_divided(matrix, 2)
+	>>> print(matrix_divided(matrix, 2)
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of list) of integers/floats
 
