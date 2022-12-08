@@ -1,0 +1,77 @@
+# the function is 0-add_integer.py
+==================================
+this module will take a and b argument of type int return a+b
+=============================================================
+now how to use the function
+===========================
+::
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(8, 12)
+	20
+	
+	>>> add_integer(80, -50)
+	30
+
+this function will work with floating numbers also
+::
+	>>> add_integer(4.0, 3.0)
+	7
+	
+	>>> add_integer(5.3, 4.2)
+	9
+	>>> add_integer(3, 7.2)
+	10
+
+the second arg is option it 98 by default
+::
+	>>> add_integer(1)
+	99
+
+working with other data type instead of int or float
+====================================================
+
+when the argument passed is not int or float TypeError will raise
+with the message that arg should be int or float type
+::
+	>>> add_integer(10, 'good')
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> add_integer('good', 3)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(45, 'morning')
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+now if both argument are not int or float error is raised
+and message print to the first argument
+::
+	>>> add_integer('hello', 'world')
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+the funtion will not work if infinity argument is passed
+::
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last)
+	OverflowError: cannot convert float infinity to integer
+
+	>>> add_integer(3, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+the function will also fail if NaN number are passed
+::
+	>>> add_integer(float('NaN'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float Nan to integer
+
+	>>> add_integer(8, float('NaN'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float NaN to integer
