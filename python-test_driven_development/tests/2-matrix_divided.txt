@@ -34,7 +34,7 @@ This works even if matrix element involve float and function at the same time
 	...	[-4.4, 2.4, -6]
 	...	]
 	>>> print(matrix_divided(matrix, 2))
-	[[1.0, 0.4, -3.4], [-2.2, 1.2, -3]]
+	[[1.0, 0.4, -3.4], [-2.2, 1.2, -3.0]]
 
 If the wrong matrix is Givet the Error will rise
 ====================================================
@@ -64,7 +64,7 @@ If matrix is  not a list of lists TypeError will be raised
 	>>> matrix = [1, 2, 3]
 	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of a lists) of integers/ float
+	TypeError: matrix must be a matrix (list of a lists) of integers/ floats
 
 If one element of matrix is neither int or float TypeError will be raised
 ::
