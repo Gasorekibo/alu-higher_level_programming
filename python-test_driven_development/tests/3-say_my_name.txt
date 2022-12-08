@@ -7,16 +7,16 @@ firstly let us import the file name to use it here and how to use it
 =====================================================================
 ::
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
-	>>> def say_my_name('Mugwaneza', 'Gasore')
+	>>> say_my_name('Mugwaneza', 'Gasore')
 	My name is Mugwaneza Gasore
-
+	
 if one of the name if absent the name will be printed with white space
 in place where there is missing arguments
 ::
 	>>> say_my_name("Gasore")
-	My name is Gasore  
+	My name is Gasore
 	>>> say_my_name("", "Mugwaneza")
-	My name is  Mugwaneza
+	My name is  Mugwaneza 
 
 For invalid name the error will raise
 ============================================
