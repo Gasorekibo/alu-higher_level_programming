@@ -12,10 +12,12 @@ Now let exlore the function and see how it work with example and expression
 	...	]
 	>>> print(matrix_divided(matrix, 2))
 	[[1, 2, 3], [0.5, 2.5, 1.5]]
+
 Original matrix remain unchangeable
 ::
 	>>> print(matrix)
 	[[2, 4, 6], [1, 5, 3]]
+
 This function works also with floating numbers
 ::
 	>>> matrix = [
@@ -42,20 +44,21 @@ If matrix is not nested list of int or float TypeError will be raised
 	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
-::
+
 	>>> matrix = None
 	print(matrix_divided(matrix, 2)
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of list) of integers/floats
-::
+
 	>>> matrix = []
 	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
-::
+
 	>>> matrix = [[]]
 	>>> print(matrix_divided(matrix, 2))
 	[[]]
+
 If matrix is  not a list of lists TypeError will be raised
 ::
 	>>> matrix = [1, 2, 3]
@@ -82,6 +85,7 @@ All rows of matrix must be equal otherwise the Typeerror will be raised
 	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
 	TypeError: Each row of the matrix must have the same size
+
 div parameter should be int or float otherwise Error will be raised
 ::
 	matrix = [
