@@ -8,10 +8,10 @@ Now let exlore the function and see how it work with example and expression
 	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 	>>> matrix = [
 	...	[2, 4, 6],
-	...	[1, 5, 3]
+	...	[8, 10, 12]
 	...	]
 	>>> print(matrix_divided(matrix, 2))
-	[[1, 2, 3], [0.5, 2.5, 1.5]]
+	[[1, 2, 3], [4, 5, 6]]
 
 Original matrix remain unchangeable
 ::
@@ -21,11 +21,11 @@ Original matrix remain unchangeable
 This function works also with floating numbers
 ::
 	>>> matrix = [
-	...	[2.5, 4.0, 7.4],
-	...	[10.0, 9.5, 3.2]
+	...	[2.2, 4.0, 6.4],
+	...	[10.0, 8.2, 10.6]
 	...	]
 	>>> print(matrix_divided(matrix, 2))
-	[[1.2, 2.0, 3.7], [5.0, 4.7, 1.6]]
+	[[1.1, 2.0, 3.2], [5.0, 4.1, 5.3]]
 
 This works even if matrix element involeve float and function at the same time
 ::
