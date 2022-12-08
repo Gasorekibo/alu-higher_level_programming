@@ -6,7 +6,7 @@
 
 
 def add_integer(a, b=98):
-    """ 
+    """
         argument: a and b of type int
         return the a+b
     """
@@ -15,4 +15,4 @@ def add_integer(a, b=98):
     elif not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
     else:
-        return(int(a) + int( b))
+        return(int(a) + int(b))
