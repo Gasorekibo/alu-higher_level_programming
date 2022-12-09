@@ -1,0 +1,57 @@
+text_indentation(text) is the function we are going to narrate how it is used
+==============================================================================
+the function will print two new line after encounting certain characters in text
+======================================================================================
+Now let see how  this function work it will print two blank line at any time encounter
+``.``, ``?`` and ``:`` characters
+=====================================================================================
+::
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation('morning?')
+	morning?
+	<BLANKLINE>
+
+No space is printed at the beginning or end if provided as parameter of a function
+::
+	>>> text_indentation("   hello friend:")
+	hello friend:
+	<BLANKLINE>
+
+	>>> text_indentation('nice.   ')
+	nice.
+	<BLANKLINE>
+
+	>>> text_indentation('        ')
+	
+	>>> text_indentation('  this is:   mango?')
+	this is:
+	<BLANKLINE>
+	mango?
+	<BLANKLINE>
+
+Remember that new line is printing only for the specified character
+no if the text doesn't have the character it will not end wiht new line
+::
+	>>> text_indentation("this guy, is lucky")
+	this guy, is lucky
+
+``\n`` withing a string print new line as usual
+::
+	>>> text_indentation("step1\nstep2:")
+	step1
+	step2:
+	<BLANKLINE>
+
+If the parameter passed is not string TypeError will rise
+::
+	>>> text_indentation(90)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+	>>> text_indentation([2, 'hey', 4.5])
+	Traceback (most recent call last):
+	TypeError: text must be a string
