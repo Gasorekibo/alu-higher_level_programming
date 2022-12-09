@@ -3,6 +3,8 @@
 """
     a function will have size argument of type int
 """
+
+
 def print_square(size):
     """
         argument: size fo type int
