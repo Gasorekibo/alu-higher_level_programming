@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 # a function that print square wiht # character
 """
     a function will have size argument of type int
