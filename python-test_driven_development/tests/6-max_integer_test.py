@@ -38,8 +38,8 @@ class TestMaxInteger(unittest.TestCase):
         """
             check for single element in a list
         """
-        one = [10]
-        self.assertEqual(max_integer(one), 10)
+        one = [-10]
+        self.assertEqual(max_integer(one), -10)
 
     def test_float(self):
         """
@@ -52,8 +52,8 @@ class TestMaxInteger(unittest.TestCase):
         """
             check list containing int and float
         """
-        value = [4, 7.9, 0.5, 19]
-        self.assertEqual(max_integer(value), 19)
+        value = [4, 7.9, 0.5, -19]
+        self.assertEqual(max_integer(value), 7.9)
 
     def test_string(self):
         """
@@ -67,7 +67,7 @@ class TestMaxInteger(unittest.TestCase):
             checking a list of string
         """
         new = ['hello', 'my', 'people']
-        self.assertEqul(max_integer(new), 'people']
+        self.assertEqul(max_integer(new), 'people')
 
     def test_empty_string(self):
         """
@@ -75,6 +75,13 @@ class TestMaxInteger(unittest.TestCase):
         """
         empty-string = ""
         self.assertEqual(max_integer(empty_string), None)
+
+    def test_beginning(self):
+        """
+            checks with max a the beginning
+        """
+        beg = [98, 7, 2, 0]
+        self.assertEqual(max_integer(beg), 98)
 
 if __name__ == "__main__":
     unittest.main()
