@@ -83,5 +83,12 @@ class TestMaxInteger(unittest.TestCase):
         beg = [98, 7, 2, 0]
         self.assertEqual(max_integer(beg), 98)
 
+    def test_only_negative(self):
+        """
+            checks only negative number in a list
+        """
+        neg = [-1, -3, -5, -7]
+        self.assertEqual(max_integer(neg), -1)
+
 if __name__ == "__main__":
     unittest.main()
