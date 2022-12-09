@@ -67,7 +67,7 @@ class TestMaxInteger(unittest.TestCase):
             checking a list of string
         """
         new = ['hello', 'my', 'people']
-        self.assertEqul(max_integer(new), 'people')
+        self.assertEqual(max_integer(new), 'people')
 
     def test_empty_string(self):
         """
