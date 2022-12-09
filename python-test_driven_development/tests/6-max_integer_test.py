@@ -73,8 +73,7 @@ class TestMaxInteger(unittest.TestCase):
         """
             checks for empty string
         """
-        empty-string = ""
-        self.assertEqual(max_integer(empty_string), None)
+        self.assertEqual(max_integer(""), None)
 
     def test_beginning(self):
         """
