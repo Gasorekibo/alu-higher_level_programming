@@ -1,20 +1,80 @@
 #!/usr/bin/python3
+# we are going to use unttest module to test our functions
 """
-    Module to find the max integer in a list
+    first we will import unittest module because it is a builtin function
+    and a module that hold our function
 """
+import unittest
+max_integer = __import__('6-max_integer').max_integer
 
 
-def max_integer(list=[]):
+class TestMaxInteger(unittest.TestCase):
     """
-        Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
+        this is a class that is
+        inherit from unittest.TestCase to access all assertion
     """
-    if len(list) == 0:
-        return None
-    result = list[0]
-    i = 1
-    while i < len(list):
-        if list[i] > result:
-            result = list[i]
-        i += 1
-    return result
+    def test_ordered(self):
+        """
+            test ordered list and return max element
+        """
+        ordered = [4, 5, 6, 7]
+        self.assertEqual(max_integer(ordered), 7)
+
+    def test_unordered(self):
+        """
+            test unordered list
+        """
+        unordered = [2, 8, 4, 0]
+        self.assertEqual(max_integer(unordered), 8)
+
+    def test_empty(self):
+        """
+            check for empty list
+        """
+        empty = []
+        self.assertEqual(max_integer(empty), None)
+
+    def test_one_element(self):
+        """
+            check for single element in a list
+        """
+        one = [10]
+        self.assertEqual(max_integer(one), 10)
+
+    def test_float(self):
+        """
+            checks for list of floating number
+        """
+        floating_number = [2.3, 5,0, 7.8, 10.0]
+        self.assertEqual(max_integer(floating_number), 10.0)
+
+    def test_int_float(self):
+        """
+            check list containing int and float
+        """
+        value = [4, 7.9, 0.5, 19]
+        self.assertEqual(max_integer(value), 19)
+
+    def test_string(self):
+        """
+            check a list with string
+        """
+        string = "organization"
+        self.assertEqual(max_integer(string), 'z')
+
+    def test_list_string(self):
+        """
+            checking a list of string
+        """
+        new = ['hello', 'my', 'people']
+        self.assertEqul(max_integer(new), 'people']
+
+    def test_empty_string(self):
+        """
+            checks for empty string
+        """
+        empty-string = ""
+        self.assertEqual(max_integer(empty_string), None)
+
+if __name__ == "__main__":
+    unittest.main()
