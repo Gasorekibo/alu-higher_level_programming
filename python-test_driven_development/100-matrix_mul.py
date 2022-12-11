@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 # python function that multiply two matrix
 """ we are not allowed to use numpy """
 
