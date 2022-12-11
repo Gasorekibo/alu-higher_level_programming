@@ -16,7 +16,8 @@ Now let see how to use the function by examples
 	... [1, 5]
 	...	]
 	>>> print(lazy_matrix_mul(m_a, m_b))
-	[[5, 14] [31, 56]]
+	[[5 14]
+	[31 56]]
 
 	>>> m_a = [[0, 1]]
 	>>> m_b = [
@@ -24,7 +25,7 @@ Now let see how to use the function by examples
 	... [2, 4]
 	...	]
 	>>> print(lazy_matrix_mul(m_a, m_b))
-	[[2, 4]]
+	[[2 4]]
 
 The function will also work with matrix of foalting number
 ::
@@ -37,7 +38,7 @@ The function will also work with matrix of foalting number
 	... [6.4, 3.2]
 	...	]
 	>>> print(lazy_matrix_mul(m_a, m_b))
-	[[29.92, 33.6]]
+	[[29.92 33.6]]
 
 The function should receive at least two argument otherwise the error will raise
 ::
