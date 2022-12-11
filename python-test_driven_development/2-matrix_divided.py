@@ -26,6 +26,6 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     else:
         for i in matrix:
-            result = list(map(lambda x : round(x/div, 2), i))
+            result = list(map(lambda x: round(x/div, 2), i))
             new_matrix.append(result)
         return(new_matrix)
