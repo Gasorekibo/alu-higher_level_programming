@@ -90,7 +90,7 @@ All rows of matrix must be equal otherwise the Typeerror will be raised
 	...	[3, 4, 6],
 	...	[5, 7, 9]
 	... ]
-	>>> print(matrix_divided(matrix, "not a number"))
+	>>> print(matrix_divided(matrix, "2"))
 	Traceback (most recent call last):
 	TypeError: div must be a number
 	
