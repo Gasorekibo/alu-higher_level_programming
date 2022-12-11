@@ -1,17 +1,17 @@
-#!/usr/bin/python3
-# function that multiplies 2 matrices
-"""
-    Define 'matrix_mul' function.
-"""
+#/usr/bin/python3
+# python function that multiply two matrix
+""" we are not allowed to use numpy """
 
 
 def matrix_mul(m_a, m_b):
     """
-        a function has two args:
-        m-a: a list of list made of int or floats
-        m_b: a list of list made of int or floats
-        return produnct from m_a * m_b
+        args:
+            m_a (list of lists of ints/floats): The first matrix.
+            m_b (list of lists of ints/floats): The second matrix.
+        return:
+            new matrix representing the multiplication of m_a by m_b.
     """
+    
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
