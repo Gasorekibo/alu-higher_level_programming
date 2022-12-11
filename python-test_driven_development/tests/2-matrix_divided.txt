@@ -70,7 +70,7 @@ If one element of matrix is neither int or float TypeError will be raised
 	...	[3, 5, 98],
 	...	[2, "not a number", 3.4]
 	... ]
-	print(matrix_divided(matrix, 2))
+	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
