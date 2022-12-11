@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     if (not isinstance(matrix, list) or matrix == [] or
         not all(isinstance(row, list) for row in matrix) or
         not all((isinstance(value, int) or isinstance(value, float))
-                 for value in [num for row in matrix for num in row])):
+                for value in [num for row in matrix for num in row])):
                 raise TypeError("matrix must be a matrix (list of lists) of "
                                 "integers/floats")
     if not all(len(row) == len(matrix[0]) for row in matrix):
@@ -27,5 +27,5 @@ def matrix_divided(matrix, div):
     else:
         for i in matrix:
             result = list(map(lambda x : round(x/div, 2), i))
-        new_matrix.append(result)
+            new_matrix.append(result)
         return(new_matrix)
