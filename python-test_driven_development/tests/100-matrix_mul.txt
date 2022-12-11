@@ -159,6 +159,8 @@ The row of two matrice should be Equal otherwise TypeError will raise
     	TypeError: each row of m_a must be of the same size
     	
 	>>> m_a = [
+	... [2, 3],
+	... [9, 7]
    	... ]
    	>>> m_b = [
    	... [1, 2],
