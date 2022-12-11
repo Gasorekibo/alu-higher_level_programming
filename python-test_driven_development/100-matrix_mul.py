@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # a function that multiply two matrices and
 """
-    return the product wihtout using numpy
+    this function will return m_a * m_b
 """
 
 
