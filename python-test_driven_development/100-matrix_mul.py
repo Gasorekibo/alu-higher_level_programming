@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# a function that multiply two matrix.
+# function that multiplies 2 matrices
 """
-    you are not allowed to use numpy or other module
+    Define 'matrix_mul' function.
 """
 
 
