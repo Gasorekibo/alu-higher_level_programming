@@ -121,9 +121,9 @@ otherwise TypeError will be raised
     	Traceback (most recent call last):
     	TypeError: m_a must be a list of lists
     	
-	>>> print(matrix_mul([[1, 2]], [3, 4]))
+	>>> print(matrix_mul([[1, 2]], [3, 4])) 
     	Traceback (most recent call last):
-   	 TypeError: m_b must be a list of lists
+   	TypeError: m_b must be a list of lists
    	 
 	>>> print(matrix_mul([1, 2], [3, 4]))
    	Traceback (most recent call last):
@@ -164,7 +164,7 @@ The row of two matrice should be Equal otherwise TypeError will raise
    	... [1, 2],
    	... [3, 4, 5]
     	... ]
-    	>>> print(matrix_mul(m_a, m_b))
+    	>>> print(matrix_mul(m_a, m_b)) 
     	Traceback (most recent call last):
     	TypeError: each row of m_b must be of the same size
     	
