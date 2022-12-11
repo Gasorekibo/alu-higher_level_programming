@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-# a function that multiply two matrices and
+# a function that multiply two matrix.
 """
-    A function that multiply two matrices
+    you are not allowed to use numpy or other module
 """
 
 
 def matrix_mul(m_a, m_b):
     """
-        arguments:
-            m_a: a matrix of list of list made of int/float
-            m_b: a matrix of list of list made of int/float
-        return: m_a * m_b
+        a function has two args:
+        m-a: a list of list made of int or floats
+        m_b: a list of list made of int or floats
+        return produnct from m_a * m_b
     """
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
