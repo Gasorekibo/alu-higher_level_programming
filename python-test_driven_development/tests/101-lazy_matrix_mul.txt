@@ -12,7 +12,7 @@ Now let see how to use the function by examples
 	... [9, 4]
 	...	]
 	>>> m_b = [
-	... [3, 4]
+	... [3, 4],
 	... [1, 5]
 	...	]
 	>>> print(lazy_matrix_mul(m_a, m_b))
