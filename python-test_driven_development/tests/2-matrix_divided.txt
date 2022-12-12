@@ -106,4 +106,4 @@ div must be different to zero otherwise ZeroDivisionError could rise
 	... ]
 	>>> print(matrix_divided(matrix, 0))
 	Traceback (most recent call last)
-	TypeError: Each row of the matrix must have the same size
+	DivisionError: division by zero	
