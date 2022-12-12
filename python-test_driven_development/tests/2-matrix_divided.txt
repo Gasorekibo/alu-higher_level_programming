@@ -104,6 +104,6 @@ div must be different to zero otherwise ZeroDivisionError could rise
 	...	[9, 5, 9.0],
 	...	[3, -7, 5.2]
 	... ]
-	>>> print(matrix_divided(matrix, 0)
+	>>> print(matrix_divided(matrix, 0))
 	Traceback (most recent call last)
 	ZeroDivisionErro: division by zero
