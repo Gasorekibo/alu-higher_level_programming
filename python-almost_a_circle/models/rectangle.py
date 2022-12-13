@@ -28,7 +28,7 @@ class Rectangle(Base):
     def width(self, width):
         """ checking if value meet the condition """
         if not isinstance(width, int):
-             raise TypeError("width must be an integer")
+            raise TypeError("width must be an integer")
         elif width <= 0:
             raise ValueError("width must be > 0")
         self.__width = width
@@ -42,8 +42,8 @@ class Rectangle(Base):
     def height(self, height):
         """ setter for hight """
         if not isinstance(height, int):
-            raise TypeError("height must be an int")
-        elif hight <= 0:
+            raise TypeError("height must be an integer")
+        elif height <= 0:
             raise ValueError("height must be > 0")
         self.__height = height
 
@@ -82,5 +82,5 @@ class Rectangle(Base):
         """ printing a rectangle with # character """
         for i in range(self.width + 1):
             for j in range(self.height + 1):
-                print("#",end='')
+                print("#", end='')
             print()
