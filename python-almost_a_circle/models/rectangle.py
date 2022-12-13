@@ -19,57 +19,68 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-        @property
-        def width(self):
-            """ getter of with """
-            return __self.width
+    @property
+     def width(self):
+        """ getter of with """
+        return __self.width
 
-        @width.setter
-        def width(self, width):
-            """ checking if value meet the condition """
-            if not isinstance(width, int):
-                raise TypeError("width must be an integer")
-            elif width <= 0:
-                raise ValueError("width must be > 0")
-            self.__width = width
+    @width.setter
+    def width(self, width):
+        """ checking if value meet the condition """
+        if not isinstance(width, int):
+             raise TypeError("width must be an integer")
+        elif width <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = width
 
-        @property
-        def height(self):
-            """ getter for height instance """
-            return self.__height
+    @property
+    def height(self):
+        """ getter for height instance """
+        return self.__height
 
-        @height.setter
-        def height(self, height):
-            """ setter for hight """
-            if not isinstance(height, int):
-                raise TypeError("height must be an int")
-            elif hight <= 0:
-                raise ValueError("height must be > 0")
-            self.__height = height
+    @height.setter
+    def height(self, height):
+        """ setter for hight """
+        if not isinstance(height, int):
+            raise TypeError("height must be an int")
+        elif hight <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = height
 
-        @property
-        def y(self):
-            """ getter of y instance """
-            return self.__y
+    @property
+    def y(self):
+        """ getter of y instance """
+        return self.__y
 
-        @y.setter
-        def y(self, y):
-            """ setter of y instance """
-            if not isinstance(y, int):
-                raise TypeError("y must be an integer")
-            elif y < 0:
-                raise ValueError("y must be >= 0")
-            self.__y = y
+    @y.setter
+    def y(self, y):
+        """ setter of y instance """
+        if not isinstance(y, int):
+            raise TypeError("y must be an integer")
+        elif y < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = y
 
-        @property
-        def x(self):
-            """ getter of x instance """
-            return self.__x
+    @property
+    def x(self):
+        """ getter of x instance """
+        return self.__x
 
-        @x.setter
-        def x(self, x):
-            """ setter of x instance """
-            if not isinstance(x, int):
-                raise TypeError("x must be an integer")
-            elif x < 0:
-                raise ValueError("x must be >= 0")
+    @x.setter
+    def x(self, x):
+        """ setter of x instance """
+        if not isinstance(x, int):
+            raise TypeError("x must be an integer")
+        elif x < 0:
+            raise ValueError("x must be >= 0")
+
+    def area(self):
+        """ returning the are of rectangle """
+        return(self.widht * self.height)
+        
+    def display(self):
+        """ printing a rectangle with # character """
+        for i in range(self.width + 1):
+            for j in range(self.height + 1):
+                print("#",end='')
+            print()
