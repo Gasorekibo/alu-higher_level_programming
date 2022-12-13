@@ -13,7 +13,7 @@ class Square(Rectangle):
         """
             class constructor with four given attribute
         """
-        super().__init__(size, size, x=0, y=0, id=None)
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
@@ -28,5 +28,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """ print a in str format """
-        return("[Square] {} {}/{} - {}".format(self.id, self.x, self.y,
-                                               self.width))
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width
