@@ -13,13 +13,12 @@ class Square(Rectangle):
         """
             class constructor with four given attribute
         """
-        super().__init__(size, size, x=0, y=0, id=None)
-    
+        super().__init__(size, size, x, y, id)
     @property
     def size(self):
         """ getter for width """
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """ setter for width """
