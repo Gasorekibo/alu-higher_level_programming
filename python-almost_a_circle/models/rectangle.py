@@ -73,6 +73,7 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         elif x < 0:
             raise ValueError("x must be >= 0")
+        self.__x = x
 
     def area(self):
         """ returning the are of rectangle """
@@ -87,6 +88,6 @@ class Rectangle(Base):
 
     def __str__(self):
         """ printing in string format """
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
-                                                        self.y, self.width,
-                                                        self.width
+        return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                       self.y, self.width,
+                                                       self.height))
