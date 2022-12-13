@@ -18,12 +18,12 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-        
+
         @property
         def width(self):
             """ getter of with """
             return __self.width
-        
+
         @width.setter
         def width(self, width):
             """ checking if value meet the condition """
