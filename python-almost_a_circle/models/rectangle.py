@@ -81,10 +81,14 @@ class Rectangle(Base):
 
     def display(self):
         """ printing a rectangle with # character """
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end='')
-            print()
+        for i in range(self.y):
+            print("")
+        for j in range(self.height):
+            for k in range(self.x):
+                print(" ", end="")
+            for p in range(self.width):
+                print("#", end="")
+            print("")
 
     def __str__(self):
         """ printing in string format """
