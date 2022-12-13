@@ -48,4 +48,3 @@ class Square(Rectangle):
                     setattr(self, 'heidth', value)
                 else:
                     setattr(self, key, value)
-
