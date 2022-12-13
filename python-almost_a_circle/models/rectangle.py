@@ -22,7 +22,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """ getter of with """
-        return __self.width
+        return self.__width
 
     @width.setter
     def width(self, width):
