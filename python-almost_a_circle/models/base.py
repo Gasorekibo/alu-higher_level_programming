@@ -3,6 +3,7 @@
     a base class that inherit from object
 """
 import json
+import os.path
 
 
 class Base:
@@ -61,8 +62,8 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """ a function that return a list of instance """
-        filename = cls.__name__.json
-        if os.path.exists(filename) != True:
+        filename = "cls.__name__.json"
+        if os.path.exists(filename) is False:
             return []
         with open(filename, 'r') as new:
             list_inst = new.read()
