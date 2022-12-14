@@ -39,3 +39,11 @@ class Base:
             else:
                 file.write(cls.to_json_string([i.to_dictionary()
                                               for i in list_objs]))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ return list of json string """
+        if json_string is None:
+            return([])
+        else:
+            return(json.loads(json_string))
