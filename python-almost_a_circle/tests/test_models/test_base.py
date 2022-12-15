@@ -8,6 +8,9 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 import os
+import json
+import sys
+from io import StringIO
 
 
 class TestBase_instantiation(unittest.TestCase):
@@ -332,14 +335,14 @@ class TestBase_load_from_file(unittest.TestCase):
         """
             Delete any created files.
         """
-    try:
-        os.remove("Rectangle.json")
-    except IOError:
-        pass
-    try:
-        os.remove("Square.json")
-    except IOError:
-        pass
+        try:
+            os.remove("Rectangle.json")
+        except IOError:
+            pass
+        try:
+            os.remove("Square.json")
+        except IOError:
+            pass
 
     def test_load_from_file_first_rectangle(self):
         r1 = Rectangle(10, 7, 2, 8, 1)
