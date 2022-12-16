@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    a script that prints the first State object from the database
+    returning the first city
 """
 import sys
 from model_state import Base, State
