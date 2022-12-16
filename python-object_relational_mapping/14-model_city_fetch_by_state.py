@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-    print all city from database
+    printing city object from a database
 """
 import sys
 from model_state import Base, State
 from model_city import City
 from sqlalchemy import create_engine
-from sqlalchemy.orm import
+from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == '__main__':
