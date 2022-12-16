@@ -1,23 +1,18 @@
 #!/usr/bin/python3
 """
-    python file that contains the class definition of a State
-    and an instance
+     a python file that contains the class definition of a State
+     and an instance
 """
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+mymetadata = MetaData()
+Base = declarative_base(metadata=mymetadata)
 
 
-class City(Base):
-    """
-        class city inherit from Base
-        3 attributes:
-        city's id
-        city's name
-        city's state name
-    """
-    __tablename__ = "cities"
+class State(Base):
+    """ this represent state for a database """
+    __tablename__ = "states"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
+
