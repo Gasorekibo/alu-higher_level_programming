@@ -7,6 +7,6 @@ if (typeof (Number(argv[0])) !== 'number') {
     for (let j = 0; j < args[i]; j++) {
       console.log("");
     }
-  console.log("X");
+  console.log("X".repeat(i));
 }
 }
