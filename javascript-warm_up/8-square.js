@@ -5,5 +5,5 @@ if (typeof (Number(args[0])) !== 'number') {
 } else {
   for (let i = 0; i < args[0]; i++) {
     console.log('X'.repeat(args[0]));
-}
+  }
 }
