@@ -1,9 +1,9 @@
 #!/usr/bin/node
 function add(a, b) {
-  if (typeof (a) || typeof (b) === undefined) {
+  if (typeof (a) === undefined || typeof (b) === undefined) {
     console.log('NaN');
   }else {
     return a + b;
     }
 }
-console.log(add(a, b));
+add(a, b);
