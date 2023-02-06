@@ -6,5 +6,5 @@ if (value === undefined) {
 } else if (isNaN(value)) {
   console.log('Not a number');
 } else if (typeof (value) === 'number') {
-    console.log('My number: ' + value);
+  console.log('My number: ' + value);
 }
