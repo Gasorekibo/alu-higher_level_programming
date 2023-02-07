@@ -1,7 +1,7 @@
 #!/usr/bin/node
 function secondNumber(Myarray) {
     let secondValue = 0;
-    let maximumValue = Number.MAX_VALUE(Myarray);
+    let maximumValue = Math.max(Myarray);
     if (Myarray.length === 0 || Myarray.length === 1) {
         console.log(1);
     }else {
