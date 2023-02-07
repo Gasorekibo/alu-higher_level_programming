@@ -1,15 +1,12 @@
 #!/usr/bin/node
-result = 1;
-function factorial(args) {
-  if (typeof (args) === 'number') {
-    for (let i = 1; i<= args; i++) {
-        return (result *= i);
-    }
-} else if (isNaN(args)) {
-        return(1);
-} else {
-        console.log('No answer');
+function factorial (a) {
+    result = 1;
+    if (isNaN(a)){
+        return 1;
+    } else {
+        for (let i= 1; i<=a; i++) {
+            return(result * i);
+        }
     }
 }
-
-console.log(factorial(Number(process.argv[2])));
+console.log(factorial(process.argv[2]));
