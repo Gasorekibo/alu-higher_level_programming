@@ -1,16 +1,8 @@
 #!/usr/bin/node
-function secondNumber(Myarray) {
-    let secondValue = 0;
-    let maximumValue = Number.MAX_VALUE(Myarray);
-    if (Myarray.length === 0 || Myarray.length === 1) {
-        console.log(1);
-    }else {
-        for (let i = 0; i < Myarray.length; i++) {
-            if (i >= secondValue && i < maximumValue) {
-                secondValue.push(i);
-            }
-        return(secondValue)
-        }
-    }
+
+const args = process.argv.slice(2);
+if (args.length <= 1) {
+  console.log(0);
+} else {
+  console.log(args.sort((a, b) => b - a)[1]);
 }
-console.log(secondNumber(Number(process.argv[2])));
