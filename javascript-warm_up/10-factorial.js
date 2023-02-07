@@ -5,12 +5,12 @@ function factorial(args) {
     for (let i = 1; i<= args; i++) {
         result = 1 * i;
     }
-    } else if (Number(args) === NaN) {
+} else if (Number(args) === NaN) {
         result = 1;
-    } else {
+} else {
         console.log('No answer');
     }
-console.log(result);
+  console.log(result);
 }
 
-factorial();
+factorial(Number(args));
