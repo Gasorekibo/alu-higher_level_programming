@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function factorial (a) {
-  if (isNaN (a) || a <= 0){
+  if (isNaN(a) || (a <= 0)) {
     return 1;
   } else {
     // using recursive way of finding factorial of number
