@@ -9,4 +9,4 @@ function factorial (a) {
         }
     }
 }
-console.log(factorial(process.argv[2]));
+console.log(factorial(Number(process.argv[2])));
