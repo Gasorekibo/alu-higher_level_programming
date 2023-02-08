@@ -6,7 +6,7 @@ module.exports = class Rectangle {
       this.height = h;
     }
 }
-    
+
   print () {
     for (let value = 1; value <= this.height; value++) {
       console.log('X'.repeat(this.width));
@@ -18,6 +18,6 @@ module.exports = class Rectangle {
   }
 
   double () {
-    [this.height, this.width] = [this.height * 2, this.width* 2];
+    [this.height, this.width] = [this.height * 2, this.width * 2];
   }
 };
