@@ -1,5 +1,10 @@
 #!/usr/bin/node
-const fs = require('fs');
 const request = require('request');
-const url = process.argv[2];
-request(url).pipe(fs.createWriteStream(process.argv[3]));
+const fs = require('fs');
+request.get(process.argv[2], (err, response, body) => {
+  if (err) console.log(err);
+  fs.writeFile(process.argv[3], body, (error, res) => {
+    if (error) console.log(error);
+  });
+});
+
