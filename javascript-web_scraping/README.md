@@ -1,1 +1,1 @@
-web scarpting using js
+fetching data from external API
