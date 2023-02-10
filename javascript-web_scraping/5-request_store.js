@@ -7,4 +7,3 @@ request.get(process.argv[2], (err, response, body) => {
     if (error) console.log(error);
   });
 });
-
